@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale-1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3579510e29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/My Portfolio-modified (1).png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#Records">Carrier Records</a></li>
+                <li><a href="#Certifications">Portfolios</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+        <h1>Hi, I'm<span> Srujan</span></h1>
+        <p class="mut">~Transforming Ideas into Impact Across Disciplines~</p>
+        </div>
+    </div>
+</div>
+<!----------------------------------------ABOUT--------------------------------------- -->
+<div id="about">
+    <div class ="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/photo passport.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="tum1">From the elite defence labs of DRDO–DRDL to the quiet depths of a year-long spiritual retreat, my path as an engineer has been defined by extremes — of intellect, intention, and impact. I am a graduate in Electronics and Communication Engineering from Thapar University, and my journey is fueled by a relentless pursuit to understand complex systems, both human and machine.
+
+At DRDL, I was entrusted with the AI Band Vision Project under the mentorship of Dr. Akula Naresh (Scientist-F), where I developed and deployed a real-time aerial object detection system using YOLOv7 on the NVIDIA Jetson AGX Xavier. This was not theoretical R&D — it was applied innovation for national defence. I trained custom datasets, optimized edge inference pipelines, and integrated my work into Tunga, an autonomous aerial platform powered by the Jetson Nano and Pixhawk. Every iteration was a high-stakes contribution to real-world autonomy — a rare fusion of AI, embedded systems, and robotics, shaped by urgency and purpose.
+
+Then, at the peak of my technical momentum, I made a conscious choice to step away. I took a 12-month sabbatical dedicated to deep spiritual and philosophical study — a retreat grounded in silence, ancient wisdom, and radical introspection. This was not a detour from innovation; it was a recalibration of it. I explored the architecture of awareness, the mechanics of consciousness, and the ethical foundations of intelligence. I developed a living, adaptive philosophy — one that sharpens my decision-making under uncertainty, deepens my emotional intelligence, and strengthens my ability to navigate ambiguity with calm, presence, and strategic insight.
+
+This transformation redefined how I build. I now approach technology not just as a tool, but as a mirror of human cognition — a system that should be designed with awareness as much as with code. I’ve since returned with renewed energy and clarity, immersing myself in projects at the intersection of artificial intelligence, robotics, control theory, physics-inspired simulation, and brain-inspired computing. My work now flows with a dual force: scientific precision and philosophical depth.
+
+Outside the lab, I live the same ethos of flow and control. I perform improvised guitar solos, master freestyle football, ride the edge with advanced skateboarding, compete in boxing, and race through virtual skies in high-speed FPV drone simulations. These aren't hobbies — they are extensions of the same presence and performance that define my engineering.
+
+I build systems that think, sense, move — and evolve. And I do so not just with skill, but with purpose. My mission is to push the boundaries of intelligence — both artificial and human — and to engineer a future that is not only smarter, but also more conscious.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                    <p class="tab-links"onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>DRDO-DRDL(Defence Reaserch and Development Laboratory).</span><br><spanx>(January-2023 to June-2023)</spanx><br><spany>Deep Learning Project Intern</spany><p class="tum">
+                            <br>1.) 6-month stint on Indigenous Defence Projects.
+                            <br>2.) Focused on the AI Band Vision Project led by Dr. Akula Naresh (Scientist-F) (Industrial Mentor).
+                            <br>3.) Implemented YOLOv7 on NVIDIA Jetson AGX XAVIER.
+                            <br>4.) The Task involved Real-time aerial view object detection leveraging a custom dataset on YOLOv7, trained on NVIDIA Jetson AGX XAVIER, and deployed on an aerial vehicle (Tunga) equipped with NVIDIA Jetson Nano and Pixhawk.
+                            <br>5.) Added Parameters (Code) to the detection for specific applications under the guidance of the Industry Mentor.
+                            <br>6.) Collaborated with cross-functional teams to integrate enhanced object detection.</p></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023 | Thapar Institute of Engineering and Technology.</span><br><p class="tum">Bachelor of Engineering in Electronics and Communication Engineering.</p></li>
+                        <li><span>2017-2019 | Krishna Murty IIT Academy(Shivam Junior College).</span><br><p class="tum">11th&12th Standard.</p></li>
+                        <li><span>2017 | All Saints High School.</span><br><p class="tum">10th Standard.</p></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li><span>Guitar Performance (Solo Improvisation)</span><br><p class="tum">Crafting spontaneous melodies that blend emotion with technique.</p></li>
+                        <li><span>Freestyle Football</span><br><p class="tum">Mastering ball control with creativity, precision, and flair.</p></li>
+                        <li><span>Advanced Skateboarding</span><br><p class="tum">Pushing balance and style through complex street and park tricks.</p></li>
+                        <li><span>Competitive Boxing</span><br><p class="tum">Honing discipline, agility, and strategic thinking in the ring.</p></li>
+                        <li><span>FPV Drone Racing (Simulation Expertise).</span><br><p class="tum">Navigating virtual airspace with split-second reflexes and control.</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-col-3">
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------Records----------------------------------- -->
+<div id="Records">
+    <div class="container">
+        <h1 class="sub-title">Carrier Records</h1>
+        <p class="tum"></p>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/DRDO-logo.png">
+                <div class="layer">
+                    <h3>DRDO-DRDL</h3>
+                    <p>Internship Completion Certificate(AI-Band Vision Project).</p>
+                    <p>Jan/2023 - June/2023</p>
+                    <a href="https://drive.google.com/file/d/1HLe3V2GTpNk6KHFyF1Rc-cfmVhOMu4U4/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/thapar.png">
+                <div class="layer">
+                    <h3>Thapar Instiute of Engineering and Technology</h3>
+                    <p>B.E in Electronics and Communication Engineering</p>
+                    <p>2019 - 2023</p>
+                    <a href="https://drive.google.com/file/d/1DYPLlZjPQKM_y4Cwhk4FDDl_zh3vQLam/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/JEE.jpeg">
+                <div class="layer">
+                    <h3>JEE Mains Score Card</h3>
+                    <p>2019</p>
+                    <a href="https://drive.google.com/file/d/1QfDZ2-pocQHG2pc5Gg_f4-Te5Q0pBMFf/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/inter-state-board.png">
+                <div class="layer">
+                    <h3>11th and 12th Standard</h3>
+                    <p>Krishna Murty IIT Academy ,Shivam Junior College</p>
+                    <p>2017 - 2019</p>
+                    <a href="https://drive.google.com/file/d/1uOZC4Kcw6RW7XBQmsYFuuJS9Eme-T2SP/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/TS-Board-SSC.png">
+                <div class="layer">
+                    <h3>10th Standard</h3>
+                    <p>All Saints High School</p>
+                    <p>2017</p>
+                    <a href="https://drive.google.com/file/d/1LWfp3LKxKV8pwuxmakE3sb7x3bGUCirJ/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn hidden" id="minimizeBtn">Minimize</a>
+    </div>
+</div>
+<!-------------------------------------------------My Certifications--------------------------------------->
+<div id="Certifications">
+    <div class="container">
+        <h1 class="sub-title">Roles and Portfolios</h1>
+        <p class="tum"></p>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/AI.jpeg">
+                <div class="layer1">
+                    <h3>Portfolio for AI related Roles</h3>
+                    <p></p>
+                    <a href="https://srujan29112001.github.io/AIPortfolio/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/robo.jpeg">
+                <div class="layer2">
+                    <h3>Portfolio for Robotics related Roles</h3>
+                    <p></p>
+                    <a href="https://srujan29112001.github.io/RoboticsPortfolio/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Researcher.jpeg">
+                <div class="layer3">
+                    <h3>Portfolio for Space and Bio Tech Researcher/Engineer related Roles</h3>
+                    <p></p>
+                    <a href="https://srujan29112001.github.io/SpaceBioTechPortfolio/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn hidden" id="minimizeBtn">Minimize</a>
+    </div>
+</div>
+<!----------------------------------------Contact Me------------------------------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ksrujan_be19@thapar.edu</p>
+                <p><i class="fa-solid fa-paper-plane"></i>kt.srujan@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9100725768</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/srujan.hardik/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/srujan29_?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/k-srujan2                    "><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Srujan29112001?tab=overview&from=2023-11-01&to=2023-11-30"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var siemenu = document.getElementById("sidemenu");
+    function openmenu()
+    {
+        siemenu.style.right = "0";
+    }
+    function closemenu()
+    {
+        siemenu.style.right = "-200px";
+    }
+</script>
+<script>
+document.getElementById('toggleBtn').addEventListener('click', function (event) {
+    // Prevent the default behavior of the anchor tag
+    event.preventDefault();
+
+    // Select all hidden certifications
+    var hiddenCertifications = document.querySelectorAll('.work.hidden');
+
+    // Toggle the 'hidden' class to show/hide certifications
+    hiddenCertifications.forEach(function (certification)
+    {
+        certification.classList.toggle('hidden');
+    });
+
+    // Toggle visibility of buttons
+    document.getElementById('toggleBtn').classList.toggle('hidden');
+    document.getElementById('minimizeBtn').classList.toggle('hidden');
+});
+
+document.getElementById('minimizeBtn').addEventListener('click', function (event) \
+{
+    // Prevent the default behavior of the anchor tag
+    event.preventDefault();
+
+    // Select all certifications
+    var allCertifications = document.querySelectorAll('.work');
+
+    // Hide additional certifications beyond the first 3
+    for (var i = 3; i < allCertifications.length; i++) 
+    {
+        allCertifications[i].classList.add('hidden');
+    }
+
+    // Toggle visibility of buttons
+    document.getElementById('toggleBtn').classList.toggle('hidden');
+    document.getElementById('minimizeBtn').classList.toggle('hidden');
+});
+</script>
+<script>
+    document.getElementById('projectsToggleBtn').addEventListener('click', function (event) 
+    {
+            event.preventDefault();
+            var allProjects = document.querySelectorAll('.project');
+            allProjects.forEach(function (project, index) 
+            {
+                if (index >= 3) 
+                {
+                    project.classList.toggle('hidden');
+                }
+            });
+
+            var projectsToggleBtn = document.getElementById('projectsToggleBtn');
+            projectsToggleBtn.classList.toggle('hidden');
+
+            // Toggle visibility of Minimize button
+            var minimizeBtn2 = document.getElementById('minimizeBtn2');
+            minimizeBtn2.classList.toggle('hidden');
+        });
+
+        document.getElementById('minimizeBtn2').addEventListener('click', function (event) {
+            event.preventDefault();
+
+            // Hide additional projects beyond the first 3
+            var allProjects = document.querySelectorAll('.project');
+            allProjects.forEach(function (project, index) {
+                if (index >= 3) {
+                    project.classList.add('hidden');
+                }
+            });
+
+            var projectsToggleBtn = document.getElementById('projectsToggleBtn');
+            projectsToggleBtn.classList.remove('hidden');
+
+            // Toggle visibility of Minimize button
+            var minimizeBtn2 = document.getElementById('minimizeBtn2');
+            minimizeBtn2.classList.add('hidden');
+        });
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMgAePb3b356XxG91zyNuVrGwzybWb_1_e0pt5yvTpxvADkznhn005EPiFC0nFRKvO/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
